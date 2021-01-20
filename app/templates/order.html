@@ -7,10 +7,16 @@
     
     <title>{{ title }} - Fly Away Agency</title>
 </head>
+
 <body>
-    <h1>Fly Away Travel Booking</h1>
+    <header>
+        <h1>Fly Away Travel Booking</h1>
+    </header>
+
+    <section class="order-details">
         <p>
             {{order.customer_name}}, {{order.order_date}}, {{order.quantity}}, <b>{{order.destination}}</b>
         </p>
+    </section>
 </body>
 </html>
