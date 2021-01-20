@@ -21,9 +21,10 @@
 
             <div class="order-details">
                 <p><b>Name: </b>{{order.customer_name}}</p>
-                <p><b>Date: </b>{{order.order_date}}</p>
-                <p><b>Pax: </b>{{order.quantity}}</p>
+                <!-- <p><b>Date: </b>{{order.order_date}}</p>
+                <p><b>Pax: </b>{{order.quantity}}</p> -->
                 <p><b>Destination: </b>{{order.destination}}</p>
+                <p><a href="/orders/{{orders.index(order)}}">More Details</a></p>
             </div>
         
             {% endfor %}
