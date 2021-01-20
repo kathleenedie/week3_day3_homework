@@ -1,0 +1,2 @@
+FLASK_APP=destiny.py
+FLASK_ENV=development
