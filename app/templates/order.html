@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" >
     
     <title>{{ title }} - Fly Away Agency</title>
 </head>
@@ -14,9 +14,14 @@
     </header>
 
     <section class="order-details">
-        <p>
-            {{order.customer_name}}, {{order.order_date}}, {{order.quantity}}, <b>{{order.destination}}</b>
-        </p>
+        <p><b>Name: </b>{{order.customer_name}}</p>
+        <p><b>Date: </b>{{order.order_date}}</p>
+        <p><b>Pax: </b>{{order.quantity}}</p>
+        <p><b>Destination: </b>{{order.destination}}</p>
     </section>
+
+    <footer>
+        <h2>Your Leisure is Our Pleasure</h2>
+    </footer>
 </body>
 </html>

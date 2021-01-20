@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="static/style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}" >
 
 
     <title>{{ title }} - Fly Away Agency</title>
@@ -18,7 +18,7 @@
     
         <div id="order-book">
             {% for order in orders %}
-            
+
             <div class="order-details">
                 <p><b>Name: </b>{{order.customer_name}}</p>
                 <p><b>Date: </b>{{order.order_date}}</p>
